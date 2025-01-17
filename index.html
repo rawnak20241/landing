@@ -822,7 +822,7 @@
                 },
                 //display labels inside pie chart
                 datalabels: {
-                    color: "#ffffff",
+                    color: "#0d008d",
                     formatter: (_, context) => context.chart.data.labels[context.dataIndex],
                     font: { size: 24 },
                 },
@@ -859,10 +859,10 @@
                     buttons: {
                         cancel: "Close",
                         confirm: {
-                            text: "Share on WhatsApp",
+                            text: "Share on Messenger",
                             value: true,
                             visible: true,
-                            className: "whatsapp-btn",
+                            className: "Messenger-btn",
                             closeModal: true,
                         },
                     },
@@ -870,8 +870,8 @@
                     if (value) {
                         // Replace 'your-message-here' with the desired WhatsApp message.
                         const message = encodeURIComponent("I just won the " + value + " on the Lucky Spin!");
-                        const whatsappLink = "https://wa.me/+447480487333?text=" + message;
-                        window.open(whatsappLink, "https://wa.me/+447480487333");
+                        const MessengerLink = "https://m.me/rawnakhasan.10w?text=" + message;
+                        window.open(MessengerLink, "https://m.me/rawnakhasan.10w");
                     }
                 });
                 finalValue.innerHTML = `<p>Value: ${value}</p>`;
@@ -898,10 +898,10 @@
                    buttons: {
                        cancel: "Close",
                        confirm: {
-                           text: "Share on WhatsApp",
+                           text: "Share on Messenger",
                            value: true,
                            visible: true,
-                           className: "whatsapp-btn",
+                           className: "Messenger-btn",
                            closeModal: true,
                        },
                    },
@@ -909,8 +909,8 @@
                    if (value) {
                        // Replace 'your-message-here' with the desired WhatsApp message.
                        const message = encodeURIComponent("I just won the " + bonus + " on the Lucky Spin!");
-                       const whatsappLink = "https://wa.me/+447480487333?text=" + message;
-                       window.open(whatsappLink, "https://wa.me/+447480487333");
+                       const MessengerLink = "https://m.me/rawnakhasan.10w?text=" + message;
+                       window.open(MessengerLink, "https://m.me/rawnakhasan.10w");
                    }
                });
 
